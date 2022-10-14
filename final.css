@@ -311,7 +311,7 @@ input, select {
     
     }
     .text{
-        display: block;
+      
         align-items: center;
         font-size: 28px;
         flex-wrap: wrap;
@@ -319,6 +319,7 @@ input, select {
         margin:70px 20px 20px 30px;
         justify-content: center;
         line-height: 45px;
+        width: 300px;
         
     }
   
@@ -329,7 +330,9 @@ input, select {
         justify-content: center;
         position: relative;
         top: 0px;
-        width: 300px;
+        width: auto;
+        height: 100%;
+
       
      
     }
