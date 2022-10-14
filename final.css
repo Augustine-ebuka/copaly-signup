@@ -161,19 +161,6 @@ nav ul li a:hover{
 
 /* HEADER ENDS CSS */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container{
     height: calc(100vh- 800px);
 }
@@ -336,18 +323,19 @@ input, select {
     }
   
     .user-input{
-        width: 400px;
         font-size: 24px;
         padding: 10px;
         margin: 20px;
         justify-content: center;
         position: relative;
         top: 0px;
-        left: 20px;
+        width: 300px;
+      
      
     }
     .user-input input, select{
-        padding: 10px;
+        padding: 5px;
+
 
     }
     .title{
