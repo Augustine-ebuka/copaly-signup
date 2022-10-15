@@ -29,7 +29,7 @@ nav ul{
 }
  ul li{
     display: block;
-    margin: 10px;
+    margin: 7px 10px 10px 10px;
     font-size: 16px;
     text-transform: capitalize;
     color:#75849a;
@@ -60,34 +60,37 @@ nav ul li:hover .subparent ul{
 nav ul li:hover .subparent ul li{
     width: 150;
     padding: 5px;
-
+}
+nav ul li a:hover{
+    color: #003399;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 nav ul li:hover .subparent{
     display: block;
     position: absolute;
     background-color: white;
-    box-shadow:1px 3px 4px -1px rgba(0, 0, 0, 0.1),
-    4px 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: all 0.3 ease-in;
+    box-shadow: 0 0 5px #ccc;
+    transition: all 0.4 ease-in;
     text-align: left;
     width: 200px;
     margin-top: 10px;
+    border-radius: 5px;
 } 
 
 .subparent ul li{
     width: 150;
     padding: 5px;
-
+}
+.subparent ul li:hover{
+    transition: all 0.3 ease-in;
 }
 nav ul li a{
     color:#75849a;
     text-decoration: none;
     list-style: none;
 }
-nav ul li a:hover{
-    color: #003399;
-    cursor: pointer;
-}
+
 
 .start-btn{
     float: right;
@@ -206,11 +209,15 @@ input, select {
     font-size: 35px;
     padding: 15px;
     margin: 20px;
-    width: 500px;
+    max-width: 400px;
     background-color: white;
     border-radius: 7px;
     box-shadow: 0 0 5px #ccc;
     margin-top: 120px;
+    height: auto;
+    
+ 
+
 
 }
 .user-input .input-group .form-control{
@@ -224,12 +231,13 @@ input, select {
 .user-input .input-group .form-control input, select{
  
     width: 100%;
-    padding: 12px 10px;
+    padding: auto;
     margin: 5px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    height: 42px;
 }
 
  .title{
@@ -250,14 +258,14 @@ input, select {
   .terms{
     display: inline;
     color: black;
-    line-height: 24px;
+
 
   }
 .terms p{
     font-size: 14px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    padding: 10px;
+    padding: 5px;
     
 }
 .terms a{
@@ -278,7 +286,7 @@ input, select {
 }
 .copy p{    
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: white;
+    color: #75849a;
     text-align: center;
 
 }
@@ -332,14 +340,11 @@ input, select {
         top: 0px;
         width: auto;
         height: 100%;
-
-      
-     
     }
+
+
     .user-input input, select{
         padding: 5px;
-
-
     }
     .title{
         color: #003399;
@@ -347,14 +352,11 @@ input, select {
     .text{
         margin-bottom: 70px;
     }
-   
-
 }
 
 .footer-container{
     background-color:  #003399;
-    list-style: none;
-    
+    list-style: none;   
 }
 .footer-content{
     display: flex;
@@ -365,8 +367,6 @@ input, select {
     font-size: 16px;
     margin-top: 20px;
     padding: 30px;
-
-    
 }
 .footer-content .store{
 
@@ -397,6 +397,9 @@ input, select {
     color: #ccc;
     font-size: 14px;
 }
+
+/* RESPONSIVENESS FOR MOBILE */
+
 @media (max-width: 768px)  {
     .footer-content{
         display: block;
@@ -416,11 +419,3 @@ input, select {
     }
    
 }
-
-
-
-
-
-
-
-
