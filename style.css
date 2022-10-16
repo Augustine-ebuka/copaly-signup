@@ -51,7 +51,8 @@
     color: #003399;
     transition: all 0.3s ease-in-out;
 }
-.accordion .mobile-menu .question::after{
+
+#elementwithchildren::after{
     content: '+';
     float: right;
     position: relative;
@@ -94,10 +95,14 @@
     transition: .3s;
 }
 
-.accordion .mobile-menu.active .question::after{
+
+.accordion .mobile-menu.active #elementwithchildren::after{
     content: '-';
     font-size: 30px;
     transition: .3s;
+    float: right;
+    position: relative;
+    padding-right: 20px;
 }
 
 #getstartbtn{
@@ -109,7 +114,7 @@
     color: white;
     margin: 10px 30px 0px 30px;
     justify-content: center;
-    height: 30px;
+ 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }

@@ -12,6 +12,8 @@ document.querySelector('.bars').addEventListener('click', classToggle);
 for (var i = 0; i < content.length; i++) {
     content[i].addEventListener('click', function () {
         this.classList.toggle('active');
-        console.log(content)
+        content[2].classList.remove('active');
     });
 }
+
+console.log(content[2].style.content)
