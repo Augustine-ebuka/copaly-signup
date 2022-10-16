@@ -28,11 +28,15 @@
 
 }
 
-.accordion .startbtn.hide{
-    display: none;
-}
+
 .accordion .mobile-menu.hide {
-    display:none ;
+    display:block ;
+    transition: all 0.5s ease-in-out;
+}
+.accordion .mobile-menu{
+    display: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
     transition: all 0.5s ease-in-out;
 }
 .accordion .mobile-menu .question{
@@ -54,7 +58,7 @@
     padding-right: 20px;
 }
 .accordion .mobile-menu .answer{
-    padding-left: 8px;
+    padding-left: 20px;
     width: 100%;
     position: relative;
     height: 0px;
@@ -77,12 +81,7 @@
 }
 
 
-
-
-/**
-after adding javascript link
-
-*/
+/************after adding javascript link******************/
 .accordion .mobile-menu.active .answer{
     height: 80px;
 }
@@ -112,7 +111,7 @@ after adding javascript link
 }
 
 
-/* styling for web view starts here*/
+/* styling for Desktop view starts here*/
 nav{
     width: 100%;
     display: flex;
@@ -195,20 +194,19 @@ nav ul li a{
 
 
 .start-btn{
-    float: right;
     background-color: #003399; 
     padding: 10px;
     font-size: 15px;
     text-transform: capitalize;
     border-radius: 50px;
-    margin-right: 20px;
     margin: auto;
     color:white;
-    font-family: 'Roboto', sans-serif;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
     line-height: 20px;
     font-weight: bold;
     text-align: center;
-    line-height: 14px;
+    position: relative;
 }
 
 .checkbtn{
@@ -218,8 +216,7 @@ nav ul li a{
     line-height: 80px;
     margin-left: 80px;
     cursor: pointer;
-    display: none;
-
+    display: block;
   }
 
 
