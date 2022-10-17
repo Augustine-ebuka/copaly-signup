@@ -125,7 +125,7 @@
 
 
 /* styling for Desktop view starts here*/
-nav{
+.nav{
     width: 100%;
     display: flex;
     border-bottom: 1px solid rgb(236, 235, 235);
@@ -133,11 +133,11 @@ nav{
     background-color: #ffff;
     z-index: 200; 
 }
-nav .logo{
+.nav .logo{
     margin: 20px 10px;
    
 }
-nav ul{
+.nav ul{
     display: flex;
     margin: 20px 15px;
 }
@@ -166,21 +166,21 @@ nav ul{
     display: none;
  
 }
-nav ul li:hover .subparent ul{
+.nav ul li:hover .subparent ul{
     display: block;
     margin: 10px;
 
 }
-nav ul li:hover .subparent ul li{
+.nav ul li:hover .subparent ul li{
     width: 150;
     padding: 5px;
 }
-nav ul li a:hover{
+.nav ul li a:hover{
     color: #003399;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-nav ul li:hover .subparent{
+.nav ul li:hover .subparent{
     display: block;
     position: absolute;
     background-color: white;
@@ -199,7 +199,7 @@ nav ul li:hover .subparent{
 .subparent ul li:hover{
     transition: all 0.3 ease-in;
 }
-nav ul li a{
+.nav ul li a{
     color:#75849a;
     text-decoration: none;
     list-style: none;
@@ -208,18 +208,22 @@ nav ul li a{
 
 .start-btn{
     background-color: #003399; 
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     font-size: 15px;
     text-transform: capitalize;
     border-radius: 50px;
-    margin: auto;
     color:white;
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-weight: bold;
-    text-align: center;
-    position: relative;
+}
+.right-web-navbar{
+    margin-left:20px ;
+    position:absolute;
+    right: 50px;
+    top: 35px; 
+    cursor: pointer;
 }
 
 .checkbtn{
@@ -235,7 +239,7 @@ nav ul li a{
 
 @media  (max-width: 768px) {
 
-    nav{
+    .nav{
         display: none;
 
     }
@@ -349,8 +353,8 @@ input, select {
     font-size: 14px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    padding: 5px;
-    
+    padding: 10px;
+    color: #75849a;    
 }
 .terms a{
     text-decoration: none;
@@ -438,6 +442,9 @@ input, select {
     }
 }
 
+
+/************FOOTER SECTION ****************/
+
 .footer-container{
     background-color:  #003399;
     list-style: none;   
@@ -453,9 +460,7 @@ input, select {
     padding: 30px;
 }
 .footer-content .store{
-
     margin-right: 10px;
-    padding: 0px 5px;
     color:  #75849a;
     font-size: 16px;
     margin-top: 10px;
@@ -465,20 +470,20 @@ input, select {
 
 
 .footer-container .footer-content ul{
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   
 }
 .footer-container .footer-content ul li{
     width: auto;
-    padding: 7px 0px;
     list-style: none;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
    
 }
 .footer-container .footer-content ul li a{
-    color: #ccc;
+    color: white;
     font-size: 14px;
 }
 
