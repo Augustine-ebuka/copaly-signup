@@ -260,8 +260,6 @@
     justify-content: center;
     width: 100%;
     background: radial-gradient(ellipse at top left, hsla(217,100%,50%,0.3),transparent 70%);
-
-
 }
 input, select {
     -webkit-transition: all 0.30s ease-in-out;
@@ -275,10 +273,9 @@ input, select {
   }
    
   input:focus, select:focus {
-    box-shadow: 0 0 5px #497de6;
+    box-shadow: 0 0 3px #7098e9;
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
-    border: 1px solid #497de6;
   }
 .text{
     flex-wrap: block;
@@ -303,10 +300,6 @@ input, select {
     box-shadow: 0 0 5px #ccc;
     margin-top: 120px;
     height: auto;
-    
- 
-
-
 }
 .user-input .input-group .form-control{
     width: 100%;
@@ -329,25 +322,20 @@ input, select {
 }
 
  .title{
-   border-top: 3px solid #003399;
+  border-top: 3px solid #003399;
   width: 120px;
   border-radius: 2px;
-  font-size: 14px;
+  font-size: 16px;
   color:#333333;
   background-color: #fbfcfe;
   padding: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-align: center;
- 
-  
- 
   }
   .terms{
     display: inline;
     color: black;
-
-
   }
 .terms p{
     font-size: 14px;
@@ -363,10 +351,10 @@ input, select {
     background-color:  #003399;
     color: white;
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
 }
 #btn-submit:hover{
-    background-color: #497de6;
+    background-color: #0f4ecc;
 }
 .copy{
     padding: 20px;
@@ -485,6 +473,9 @@ input, select {
 .footer-container .footer-content ul li a{
     color: white;
     font-size: 14px;
+}
+.store .text-footer{
+    line-height: 24px;
 }
 
 /* RESPONSIVENESS FOR MOBILE */
