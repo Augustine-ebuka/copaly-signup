@@ -110,27 +110,34 @@
                 <form action="">
                     <div class="input-group">
                         <div class="form-control">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <label for="email">email</label>
+                            <input type="email" class="form-control" placeholder="enter email" required>
                         </div>
                         <div class="form-control">
-                            <input type="email" class="form-control" placeholder="Your Email"  required>
+                            <label for="phone">Phone number</label>
+                            <input type="text" class="form-control" placeholder="enter phone"  required>
                         </div>
+                      
                         <div class="form-control">
-                            <input type="text" class="form-control" placeholder="Your phone number"  required>
-                        </div>
-                        <div class="form-control">
-                            <select>
-                                <option>Nigeria</option>
-                                <option>South Africa</option>
-                                <option>Congo</option>
-                                <option>Ghana</option>
+                            <label for="country">Select country</label>
+                            <select name="country">
+                                <option value="nigeria">Nigeria</option>
+                                <option value="south africa">South Africa</option>
+                                <option value="congo">Congo</option>
+                                <option value="ghana">Ghana</option>
                             </select>
                         </div>
                         <div class="form-control">
-                            <input type="text" class="form-control" placeholder="Referal Code">
+                            <label for="Account type">Account Type</label>
+                            <select>
+                                <option value="personal">Personal</option>
+                                <option value="business">Business</option>
+                            </select>
                         </div>
+                      
                         <div class="form-control">
-                            <input type="password" class="form-control" placeholder="Your Password"  required>
+                            <label for="username">Username</label>
+                            <input type="password" class="form-control" placeholder="enter username"  required>
                         </div>
                         <div class="terms"><p>By clicking Sign Up, you agree to our <span><a href="#">Terms and Condition</a></span>and also agree to accept email and SMS update.</p></div>
                         <div class="form-control" >

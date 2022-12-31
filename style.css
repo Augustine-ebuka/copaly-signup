@@ -429,6 +429,10 @@ input, select {
         margin-bottom: 70px;
     }
 }
+label{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333333;
+}
 
 
 /************FOOTER SECTION ****************/
